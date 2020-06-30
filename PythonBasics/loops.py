@@ -18,3 +18,11 @@ for letterCounter in "This is a string":
 # For loops using a range of elements in an array
 for elementCounter in ["Example", "Test", "otherPhrase"]:
     print(elementCounter)
+
+# Multidimensional lists and nested loops
+grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for row in grid:
+    rowPrint = ""
+    for column in row:
+        rowPrint += str(column) + " "
+    print(rowPrint)
