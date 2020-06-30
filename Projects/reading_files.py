@@ -24,3 +24,18 @@ else:
 
 # You want to make sure to close any files that are open
 fileData.close()
+
+# Appending is a similar process, but keep in mind when you write to a file your changes will persist beyond each code run!
+appendFile = open("assets/read_this.txt", "a")
+if appendFile.writable():
+    appendFile.write("\nAnd now I write text too")
+else:
+    print("File is not writable")
+appendFile.close()
+
+newFile = open("assets/new_file.txt", "w")
+if (newFile.writable()):
+    newFile.write("And now I've written to another file as well!")
+else:
+    print("File is not writable")
+newFile.close()
