@@ -1,5 +1,3 @@
-from math import *
-
 ### Math operations
 
 # Arithmetic
