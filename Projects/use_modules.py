@@ -1,4 +1,5 @@
 import useful_tools
+import art
 
 '''
 Modules are a great way to make code reusable and write useful applications without reinvinting the wheel
@@ -15,3 +16,7 @@ seperatedFileData = useful_tools.get_file_name_and_extension(fileData)
 print("File data for " + fileData + ":")
 print("File name: " + seperatedFileData["fileName"])
 print("File extension: " + seperatedFileData["fileExtension"])
+
+# Use modules developed by others to get cool functionality with little effort
+Art = art.text2art("Isn't this cool?", "block", True)
+print(Art)
